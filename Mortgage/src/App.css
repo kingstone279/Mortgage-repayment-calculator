@@ -1,0 +1,16 @@
+body{
+  background-color:hsl(202, 86%, 94%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 920px;
+  border-radius: 90px;
+  background-color: white;
+  height: 470px;
+}
