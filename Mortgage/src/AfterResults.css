@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+   .result-side {
+        background-color: hsl(202, 55%, 16%);
+        border-bottom-left-radius: 60px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding-left: 20px;
+        padding-top: 25px;
+        width: 90%;
+  }
+  h1{
+    color: white;
+    font-size: 20px;
+  }
+  .results-box{
+    background-color: hsl(201, 83%, 9%);
+    border-top: 4px solid hsl(61, 70%, 52%);
+    width: 90%;
+    border-radius: 10px;
+    padding-left:25px ;
+    padding-top: 20px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  h2{
+    color: hsl(202, 86%, 94%);
+    font-weight: lighter;
+    font-size:15px ;
+    line-height: 0;
+
+  }
+  .box1{
+
+    border-bottom: 0.5px solid white;
+    width: 90%;
+  }
+  .result-side p{
+    color: hsl(202, 86%, 94%);
+    font-weight: lighter;
+  }
+  #monthly-pay-figure{
+    color: hsl(61, 70%, 52%);
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 0;
+  }
+  .box2 p{
+    font-size: 17px;
+    color:white ;
+    font-weight: bold;
+  }
+}

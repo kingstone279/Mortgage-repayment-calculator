@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+   .result-side {
+    background-color: hsl(202, 55%, 16%);
+    border-bottom-left-radius: 60px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .result-side img{
+    width: 150px;
+  }
+  .result-side #text{
+    text-align: center;
+    width: 80%;
+  }
+  #text h1{
+     font-size: 20px;
+     color: white;
+  }
+  #text p{
+    color: hsl(203, 41%, 72%);
+    font-weight: light;
+    font-size: 13px;
+  }
+}
+  
