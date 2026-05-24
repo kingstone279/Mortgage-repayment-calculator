@@ -8,8 +8,6 @@ body{
 .App{
   display: flex;
   justify-content: center;
-  max-width: 920px;
-  border-radius: 90px;
-  background-color: white;
+  flex-wrap: wrap;
   height: 470px;
 }

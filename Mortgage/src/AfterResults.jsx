@@ -1,5 +1,5 @@
 import '../src/AfterResults.css'
-export function AfterResults({ monthlyPayment }) {
+export function AfterResults({ monthlyPayment, totalRepay }) {
   return (
     <>
        <div className="result-side">
@@ -12,7 +12,10 @@ export function AfterResults({ monthlyPayment }) {
             </div>
             <div className="box2">
                <h2 className="plus-jakarta-sans-500" id='total-Pay'>Total you'll repay over the term</h2>
-               <p className="plus-jakarta-sans-500">50,0000</p>
+               <p className="plus-jakarta-sans-500">$ {Number(totalRepay).toLocaleString(undefined, {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}</p>
             </div>
           </div>
       </div>

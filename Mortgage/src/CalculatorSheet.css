@@ -1,115 +1,112 @@
-@media (min-width: 768px) {
-  #calculation-side {
-    background-color: white;
-    padding: 20px;
-    width: 50%;
-  }
-  .header {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 12px;
-  }
-  .header h1 {
-    font-size: 16px;
-    color: hsl(202, 55%, 16%);
-  }
-  #clear-all {
-    color: hsl(200, 24%, 40%);
-    font-size: 14px;
-    border-bottom: 1px grey solid;
-  }
-  .input-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  .input-field {
-    display: flex;
-    flex-direction: column;
-  }
-  .input-field label {
-    font-size: 12px;
-    color: hsl(200, 24%, 40%);
-  }
-  #mortgage-Term-input,
-  #mortgage-amount-input,
-  #Interest-rate-input {
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-top: 6px;
-    padding: 0;
+#calculation-side {
+  background-color: white;
+  padding: 20px 0 0 20px;
+  width: 350px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+}
+.header h1 {
+  font-size: 16px;
+  color: hsl(202, 55%, 16%);
+}
+#clear-all {
+  color: hsl(200, 24%, 40%);
+  font-size: 14px;
+  border-bottom: 1px grey solid;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.input-field label {
+  font-size: 12px;
+  color: hsl(200, 24%, 40%);
+}
+#mortgage-Term-input,
+#mortgage-amount-input,
+#Interest-rate-input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 6px;
+  padding: 0;
 
-    color: hsl(202, 55%, 16%);
-    font-style: bolder;
-  }
-  .input-field #mortgage-amount-input {
-    width: 90%;
-  }
-  
-  .input-field #mortgage-Term-input,
-  .input-field #Interest-rate-input {
-    width: 200px;
-  }
-  .input-field #Interest-Only {
-    display: inline;
-    vertical-align: middle;
-  }
-  #mortgage-amount-input::placeholder {
-    width: 3%;
-    background: hsl(202, 86%, 94%);
-    text-align: center;
-    padding: 10px;
-    color: hsl(200, 24%, 40%);
-    font-weight: bold;
-  }
-  #mortgage-Term-input::placeholder,
-  #Interest-rate-input::placeholder {
-    background: hsl(202, 86%, 94%);
-    text-align: center;
-    padding: 10px 5px 10px 0;
-    color: hsl(200, 24%, 40%);
-    font-weight: bold;
-    text-align: right;
-  }
-  .radio-box {
-    display: flex;
-    gap: 1em;
-    width: 90%;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-top: 6px;
-    padding: 10px;
-  }
-  .radio-box label{
-    align-self: center;
-    color: hsl(202, 55%, 16%);
-    font-size: 15px;
-  }
-  #error-msg-amount,
-  #error-msg-term,
-  #error-msg-rate,
-  #error-msg-radio{
-    display: none;
-    font-size: 12px;
-    color: red;
-  }
-  button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: hsl(61, 70%, 52%);
-    border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-    color: hsl(202, 55%, 16%);
-    margin-top: 25px;
-  }
-  button img {
-    margin-right: 10px;
-    width: 20px;
-  }
+  color: hsl(202, 55%, 16%);
+  font-style: bolder;
+}
+.input-field #mortgage-amount-input {
+  width: 90%;
+}
 
+.input-field #mortgage-Term-input,
+.input-field #Interest-rate-input {
+  width: 200px;
+}
+.input-field #Interest-Only {
+  display: inline;
+  vertical-align: middle;
+}
+#mortgage-amount-input::placeholder {
+  width: 3%;
+  background: hsl(202, 86%, 94%);
+  text-align: center;
+  padding: 10px;
+  color: hsl(200, 24%, 40%);
+  font-weight: bold;
+}
+#mortgage-Term-input::placeholder,
+#Interest-rate-input::placeholder {
+  background: hsl(202, 86%, 94%);
+  text-align: center;
+  padding: 10px 5px 10px 0;
+  color: hsl(200, 24%, 40%);
+  font-weight: bold;
+  text-align: right;
+}
+.radio-box {
+  display: flex;
+  gap: 1em;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 6px;
+  padding: 10px;
+}
+.radio-box label {
+  align-self: center;
+  color: hsl(202, 55%, 16%);
+  font-size: 15px;
+}
+#error-msg-amount,
+#error-msg-term,
+#error-msg-rate,
+#error-msg-radio {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(61, 70%, 52%);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: hsl(202, 55%, 16%);
+  margin-top: 25px;
+}
+button img {
+  margin-right: 10px;
+  width: 20px;
 }
 
 .plus-jakarta-sans-500 {

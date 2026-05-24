@@ -34,14 +34,19 @@ export function CalculatorSheet() {
     const principal = Number(amount)
     const monthlyRate = Number(rate) / 100 / 12
     const payments = Number(loanTerm) * 12
-    const monthlyPayment =
-      principal * monthlyRate /
-      (1 - Math.pow(1 + monthlyRate, -payments))
-
-    return monthlyPayment.toFixed(2)
+    if (!principal || !payments) return 0
+    if (monthlyRate === 0) return principal / payments
+    return (principal * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -payments))
   }
   function calculateInterestOnly(){
-   
+    const principal = Number(amount)
+    const monthlyRate = Number(rate) / 100 / 12
+    if (!principal || !monthlyRate) return 0
+    return principal * monthlyRate
+  }
+  function totalRepayOverTerm() {
+    const payments = Number(loanTerm) * 12
+    return (Number(monthlyPayment) * payments).toFixed(2)
   }
   function showResults() {
     let proceedToCalculation = true
@@ -168,7 +173,14 @@ export function CalculatorSheet() {
           Calculate Repayments
         </button>
       </div>
-      {displayResults ? <AfterResults monthlyPayment={monthlyPayment} /> : <BeforeResults/> }
+      {displayResults ? (
+        <AfterResults
+          monthlyPayment={monthlyPayment}
+          totalRepay={totalRepayOverTerm()}
+        />
+      ) : (
+        <BeforeResults />
+      )}
       
       
     </>

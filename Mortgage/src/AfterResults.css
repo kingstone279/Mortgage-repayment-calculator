@@ -1,15 +1,14 @@
-@media (min-width: 768px) {
+
    .result-side {
-        background-color: hsl(202, 55%, 16%);
-        border-bottom-left-radius: 60px;
-        height: 470px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        padding-left: 20px;
-        padding-top: 25px;
-        width: 90%;
+      background-color: hsl(202, 55%, 16%);
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      padding-left: 20px;
+      padding-top: 25px;
+      width: 90%;
   }
   h1{
     color: white;
@@ -55,4 +54,3 @@
     color:white ;
     font-weight: bold;
   }
-}

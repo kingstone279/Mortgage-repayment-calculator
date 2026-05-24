@@ -1,12 +1,12 @@
-@media (min-width: 768px) {
+
    .result-side {
     background-color: hsl(202, 55%, 16%);
-    border-bottom-left-radius: 60px;
-    height: 470px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
   .result-side img{
     width: 150px;
@@ -24,5 +24,4 @@
     font-weight: light;
     font-size: 13px;
   }
-}
   
